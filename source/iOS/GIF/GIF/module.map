@@ -1,0 +1,11 @@
+//
+//  module.map
+//  GIF
+//
+//  Created by Błażej Szajrych on 16.09.2016.
+//  Copyright © 2016 Błażej Szajrych. All rights reserved.
+//
+
+framework module GIFFramework {
+    umbrella header "GIF.h"
+}

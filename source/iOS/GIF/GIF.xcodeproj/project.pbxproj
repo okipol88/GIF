@@ -30,6 +30,11 @@
 		CE4A7D091D8C73310016C1C5 /* LCTGifEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CF21D8C73310016C1C5 /* LCTGifEncoder.h */; };
 		CE4A7D0A1D8C73310016C1C5 /* SimpleGCTEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CF31D8C73310016C1C5 /* SimpleGCTEncoder.cpp */; };
 		CE4A7D0B1D8C73310016C1C5 /* SimpleGCTEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CF41D8C73310016C1C5 /* SimpleGCTEncoder.h */; };
+		CE4A7D101D8C74920016C1C5 /* GIFFrameowrkEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7D0E1D8C74920016C1C5 /* GIFFrameowrkEncoder.h */; };
+		CE4A7D111D8C74920016C1C5 /* GIFFrameowrkEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7D0F1D8C74920016C1C5 /* GIFFrameowrkEncoder.mm */; };
+		CE4A7D131D8C832A0016C1C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */; };
+		CE4A7D171D8C88D60016C1C5 /* GIFImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7D151D8C88D60016C1C5 /* GIFImageUtils.h */; };
+		CE4A7D181D8C88D60016C1C5 /* GIFImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7D161D8C88D60016C1C5 /* GIFImageUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		CE4A7CF21D8C73310016C1C5 /* LCTGifEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCTGifEncoder.h; path = "../../../android-ndk-gif/library/androidndkgif/jni/LCTGifEncoder.h"; sourceTree = "<group>"; };
 		CE4A7CF31D8C73310016C1C5 /* SimpleGCTEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleGCTEncoder.cpp; path = "../../../android-ndk-gif/library/androidndkgif/jni/SimpleGCTEncoder.cpp"; sourceTree = "<group>"; };
 		CE4A7CF41D8C73310016C1C5 /* SimpleGCTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleGCTEncoder.h; path = "../../../android-ndk-gif/library/androidndkgif/jni/SimpleGCTEncoder.h"; sourceTree = "<group>"; };
+		CE4A7D0E1D8C74920016C1C5 /* GIFFrameowrkEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFFrameowrkEncoder.h; path = Classes/GIFFrameowrkEncoder.h; sourceTree = "<group>"; };
+		CE4A7D0F1D8C74920016C1C5 /* GIFFrameowrkEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GIFFrameowrkEncoder.mm; path = Classes/GIFFrameowrkEncoder.mm; sourceTree = "<group>"; };
+		CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE4A7D151D8C88D60016C1C5 /* GIFImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageUtils.h; sourceTree = "<group>"; };
+		CE4A7D161D8C88D60016C1C5 /* GIFImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4A7D131D8C832A0016C1C5 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +104,7 @@
 		CE4A7CB71D8C59110016C1C5 = {
 			isa = PBXGroup;
 			children = (
+				CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */,
 				CE4A7CC31D8C59120016C1C5 /* GIF */,
 				CE4A7CCF1D8C59120016C1C5 /* GIFTests */,
 				CE4A7CC21D8C59110016C1C5 /* Products */,
@@ -111,6 +123,7 @@
 		CE4A7CC31D8C59120016C1C5 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
+				CE4A7D0C1D8C74510016C1C5 /* Classes */,
 				CE4A7CDD1D8C730D0016C1C5 /* GIF_CPP_Project */,
 				CE4A7CC41D8C59120016C1C5 /* GIF.h */,
 				CE4A7CC61D8C59120016C1C5 /* Info.plist */,
@@ -154,6 +167,17 @@
 			name = GIF_CPP_Project;
 			sourceTree = "<group>";
 		};
+		CE4A7D0C1D8C74510016C1C5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A7D0E1D8C74920016C1C5 /* GIFFrameowrkEncoder.h */,
+				CE4A7D0F1D8C74920016C1C5 /* GIFFrameowrkEncoder.mm */,
+				CE4A7D151D8C88D60016C1C5 /* GIFImageUtils.h */,
+				CE4A7D161D8C88D60016C1C5 /* GIFImageUtils.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -163,6 +187,7 @@
 			files = (
 				CE4A7CFE1D8C73310016C1C5 /* DataBlock.h in Headers */,
 				CE4A7D011D8C73310016C1C5 /* GCTGifEncoder.h in Headers */,
+				CE4A7D101D8C74920016C1C5 /* GIFFrameowrkEncoder.h in Headers */,
 				CE4A7D051D8C73310016C1C5 /* GifEncoder.h in Headers */,
 				CE4A7D0B1D8C73310016C1C5 /* SimpleGCTEncoder.h in Headers */,
 				CE4A7D071D8C73310016C1C5 /* GifFrame.h in Headers */,
@@ -170,6 +195,7 @@
 				CE4A7CC51D8C59120016C1C5 /* GIF.h in Headers */,
 				CE4A7CF61D8C73310016C1C5 /* BaseGifEncoder.h in Headers */,
 				CE4A7CF81D8C73310016C1C5 /* BitWritingBlock.h in Headers */,
+				CE4A7D171D8C88D60016C1C5 /* GIFImageUtils.h in Headers */,
 				CE4A7D091D8C73310016C1C5 /* LCTGifEncoder.h in Headers */,
 				CE4A7D031D8C73310016C1C5 /* GifDecoder.h in Headers */,
 			);
@@ -277,7 +303,9 @@
 				CE4A7D081D8C73310016C1C5 /* LCTGifEncoder.cpp in Sources */,
 				CE4A7D0A1D8C73310016C1C5 /* SimpleGCTEncoder.cpp in Sources */,
 				CE4A7D021D8C73310016C1C5 /* GifDecoder.cpp in Sources */,
+				CE4A7D111D8C74920016C1C5 /* GIFFrameowrkEncoder.mm in Sources */,
 				CE4A7D041D8C73310016C1C5 /* GifEncoder.cpp in Sources */,
+				CE4A7D181D8C88D60016C1C5 /* GIFImageUtils.m in Sources */,
 				CE4A7CFD1D8C73310016C1C5 /* DataBlock.cpp in Sources */,
 				CE4A7D001D8C73310016C1C5 /* GCTGifEncoder.cpp in Sources */,
 				CE4A7CDC1D8C594A0016C1C5 /* module.map in Sources */,
@@ -341,6 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$SRCROOT\\..\\..\\android-ndk-gif\\library\\androidndkgif\\jni/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -383,6 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$SRCROOT\\..\\..\\android-ndk-gif\\library\\androidndkgif\\jni/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

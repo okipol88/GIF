@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FE8AD9F4C2EC1C2D4887DDA534F412A3344B888E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "37F8E28F8930E0ADB2D6E49A53CBBCE0B491D76A" : 0,
+    "FE8AD9F4C2EC1C2D4887DDA534F412A3344B888E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AD06AC23-679F-4013-8C5F-2CC82FC89CAA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "37F8E28F8930E0ADB2D6E49A53CBBCE0B491D76A" : "GIF\/source\/android-ndk-gif\/",
+    "FE8AD9F4C2EC1C2D4887DDA534F412A3344B888E" : "GIF\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GIF",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "source\/iOS\/GIF\/GIF.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waynejo\/android-ndk-gif",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37F8E28F8930E0ADB2D6E49A53CBBCE0B491D76A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/okipol88\/GIF.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FE8AD9F4C2EC1C2D4887DDA534F412A3344B888E"
+    }
+  ]
+}

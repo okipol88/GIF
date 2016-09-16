@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE4A7CC51D8C59120016C1C5 /* GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CC41D8C59120016C1C5 /* GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4A7CCC1D8C59120016C1C5 /* GIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7CC11D8C59110016C1C5 /* GIF.framework */; };
-		CE4A7CD11D8C59120016C1C5 /* GIFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CD01D8C59120016C1C5 /* GIFTests.m */; };
-		CE4A7CDC1D8C594A0016C1C5 /* module.map in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CDB1D8C594A0016C1C5 /* module.map */; };
+		CE4A7CD11D8C59120016C1C5 /* GIFCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CD01D8C59120016C1C5 /* GIFCreationTests.m */; };
 		CE4A7CF51D8C73310016C1C5 /* BaseGifEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CDE1D8C73310016C1C5 /* BaseGifEncoder.cpp */; };
 		CE4A7CF61D8C73310016C1C5 /* BaseGifEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CDF1D8C73310016C1C5 /* BaseGifEncoder.h */; };
 		CE4A7CF71D8C73310016C1C5 /* BitWritingBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CE01D8C73310016C1C5 /* BitWritingBlock.cpp */; };
@@ -30,11 +29,12 @@
 		CE4A7D091D8C73310016C1C5 /* LCTGifEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CF21D8C73310016C1C5 /* LCTGifEncoder.h */; };
 		CE4A7D0A1D8C73310016C1C5 /* SimpleGCTEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CF31D8C73310016C1C5 /* SimpleGCTEncoder.cpp */; };
 		CE4A7D0B1D8C73310016C1C5 /* SimpleGCTEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CF41D8C73310016C1C5 /* SimpleGCTEncoder.h */; };
-		CE4A7D101D8C74920016C1C5 /* GIFFrameowrkEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7D0E1D8C74920016C1C5 /* GIFFrameowrkEncoder.h */; };
-		CE4A7D111D8C74920016C1C5 /* GIFFrameowrkEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7D0F1D8C74920016C1C5 /* GIFFrameowrkEncoder.mm */; };
+		CE4A7D101D8C74920016C1C5 /* GIFFrameworkEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7D0E1D8C74920016C1C5 /* GIFFrameworkEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4A7D111D8C74920016C1C5 /* GIFFrameworkEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7D0F1D8C74920016C1C5 /* GIFFrameworkEncoder.mm */; };
 		CE4A7D131D8C832A0016C1C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */; };
-		CE4A7D171D8C88D60016C1C5 /* GIFImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7D151D8C88D60016C1C5 /* GIFImageUtils.h */; };
-		CE4A7D181D8C88D60016C1C5 /* GIFImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7D161D8C88D60016C1C5 /* GIFImageUtils.m */; };
+		CE4A7E471D8C8E050016C1C5 /* cat_gif in Resources */ = {isa = PBXBuildFile; fileRef = CE4A7E461D8C8E050016C1C5 /* cat_gif */; };
+		CE4A7E581D8CA9520016C1C5 /* GIFImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7E571D8CA9520016C1C5 /* GIFImageUtils.m */; };
+		CE4A7E5A1D8CA9650016C1C5 /* GIFImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7E591D8CA9650016C1C5 /* GIFImageUtils.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		CE4A7CC41D8C59120016C1C5 /* GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIF.h; sourceTree = "<group>"; };
 		CE4A7CC61D8C59120016C1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4A7CCB1D8C59120016C1C5 /* GIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE4A7CD01D8C59120016C1C5 /* GIFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFTests.m; sourceTree = "<group>"; };
+		CE4A7CD01D8C59120016C1C5 /* GIFCreationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFCreationTests.m; sourceTree = "<group>"; };
 		CE4A7CD21D8C59120016C1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4A7CDB1D8C594A0016C1C5 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 		CE4A7CDE1D8C73310016C1C5 /* BaseGifEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseGifEncoder.cpp; path = "../../../android-ndk-gif/library/androidndkgif/jni/BaseGifEncoder.cpp"; sourceTree = "<group>"; };
@@ -74,11 +74,12 @@
 		CE4A7CF21D8C73310016C1C5 /* LCTGifEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCTGifEncoder.h; path = "../../../android-ndk-gif/library/androidndkgif/jni/LCTGifEncoder.h"; sourceTree = "<group>"; };
 		CE4A7CF31D8C73310016C1C5 /* SimpleGCTEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleGCTEncoder.cpp; path = "../../../android-ndk-gif/library/androidndkgif/jni/SimpleGCTEncoder.cpp"; sourceTree = "<group>"; };
 		CE4A7CF41D8C73310016C1C5 /* SimpleGCTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleGCTEncoder.h; path = "../../../android-ndk-gif/library/androidndkgif/jni/SimpleGCTEncoder.h"; sourceTree = "<group>"; };
-		CE4A7D0E1D8C74920016C1C5 /* GIFFrameowrkEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFFrameowrkEncoder.h; path = Classes/GIFFrameowrkEncoder.h; sourceTree = "<group>"; };
-		CE4A7D0F1D8C74920016C1C5 /* GIFFrameowrkEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GIFFrameowrkEncoder.mm; path = Classes/GIFFrameowrkEncoder.mm; sourceTree = "<group>"; };
+		CE4A7D0E1D8C74920016C1C5 /* GIFFrameworkEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFFrameworkEncoder.h; path = Classes/GIFFrameworkEncoder.h; sourceTree = "<group>"; };
+		CE4A7D0F1D8C74920016C1C5 /* GIFFrameworkEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GIFFrameworkEncoder.mm; path = Classes/GIFFrameworkEncoder.mm; sourceTree = "<group>"; };
 		CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE4A7D151D8C88D60016C1C5 /* GIFImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageUtils.h; sourceTree = "<group>"; };
-		CE4A7D161D8C88D60016C1C5 /* GIFImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageUtils.m; sourceTree = "<group>"; };
+		CE4A7E461D8C8E050016C1C5 /* cat_gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cat_gif; sourceTree = "<group>"; };
+		CE4A7E571D8CA9520016C1C5 /* GIFImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageUtils.m; sourceTree = "<group>"; };
+		CE4A7E591D8CA9650016C1C5 /* GIFImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +105,7 @@
 		CE4A7CB71D8C59110016C1C5 = {
 			isa = PBXGroup;
 			children = (
-				CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */,
+				CE4A7E481D8C8E5D0016C1C5 /* Frameworks */,
 				CE4A7CC31D8C59120016C1C5 /* GIF */,
 				CE4A7CCF1D8C59120016C1C5 /* GIFTests */,
 				CE4A7CC21D8C59110016C1C5 /* Products */,
@@ -123,8 +124,8 @@
 		CE4A7CC31D8C59120016C1C5 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A7D0C1D8C74510016C1C5 /* Classes */,
 				CE4A7CDD1D8C730D0016C1C5 /* GIF_CPP_Project */,
+				CE4A7D0C1D8C74510016C1C5 /* Classes */,
 				CE4A7CC41D8C59120016C1C5 /* GIF.h */,
 				CE4A7CC61D8C59120016C1C5 /* Info.plist */,
 				CE4A7CDB1D8C594A0016C1C5 /* module.map */,
@@ -135,7 +136,8 @@
 		CE4A7CCF1D8C59120016C1C5 /* GIFTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A7CD01D8C59120016C1C5 /* GIFTests.m */,
+				CE4A7E461D8C8E050016C1C5 /* cat_gif */,
+				CE4A7CD01D8C59120016C1C5 /* GIFCreationTests.m */,
 				CE4A7CD21D8C59120016C1C5 /* Info.plist */,
 			);
 			path = GIFTests;
@@ -170,12 +172,20 @@
 		CE4A7D0C1D8C74510016C1C5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A7D0E1D8C74920016C1C5 /* GIFFrameowrkEncoder.h */,
-				CE4A7D0F1D8C74920016C1C5 /* GIFFrameowrkEncoder.mm */,
-				CE4A7D151D8C88D60016C1C5 /* GIFImageUtils.h */,
-				CE4A7D161D8C88D60016C1C5 /* GIFImageUtils.m */,
+				CE4A7E591D8CA9650016C1C5 /* GIFImageUtils.h */,
+				CE4A7E571D8CA9520016C1C5 /* GIFImageUtils.m */,
+				CE4A7D0E1D8C74920016C1C5 /* GIFFrameworkEncoder.h */,
+				CE4A7D0F1D8C74920016C1C5 /* GIFFrameworkEncoder.mm */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		CE4A7E481D8C8E5D0016C1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A7D121D8C832A0016C1C5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4A7CFE1D8C73310016C1C5 /* DataBlock.h in Headers */,
+				CE4A7D101D8C74920016C1C5 /* GIFFrameworkEncoder.h in Headers */,
 				CE4A7D011D8C73310016C1C5 /* GCTGifEncoder.h in Headers */,
-				CE4A7D101D8C74920016C1C5 /* GIFFrameowrkEncoder.h in Headers */,
 				CE4A7D051D8C73310016C1C5 /* GifEncoder.h in Headers */,
 				CE4A7D0B1D8C73310016C1C5 /* SimpleGCTEncoder.h in Headers */,
 				CE4A7D071D8C73310016C1C5 /* GifFrame.h in Headers */,
@@ -195,7 +205,7 @@
 				CE4A7CC51D8C59120016C1C5 /* GIF.h in Headers */,
 				CE4A7CF61D8C73310016C1C5 /* BaseGifEncoder.h in Headers */,
 				CE4A7CF81D8C73310016C1C5 /* BitWritingBlock.h in Headers */,
-				CE4A7D171D8C88D60016C1C5 /* GIFImageUtils.h in Headers */,
+				CE4A7E5A1D8CA9650016C1C5 /* GIFImageUtils.h in Headers */,
 				CE4A7D091D8C73310016C1C5 /* LCTGifEncoder.h in Headers */,
 				CE4A7D031D8C73310016C1C5 /* GifDecoder.h in Headers */,
 			);
@@ -287,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4A7E471D8C8E050016C1C5 /* cat_gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +314,11 @@
 				CE4A7D081D8C73310016C1C5 /* LCTGifEncoder.cpp in Sources */,
 				CE4A7D0A1D8C73310016C1C5 /* SimpleGCTEncoder.cpp in Sources */,
 				CE4A7D021D8C73310016C1C5 /* GifDecoder.cpp in Sources */,
-				CE4A7D111D8C74920016C1C5 /* GIFFrameowrkEncoder.mm in Sources */,
+				CE4A7D111D8C74920016C1C5 /* GIFFrameworkEncoder.mm in Sources */,
 				CE4A7D041D8C73310016C1C5 /* GifEncoder.cpp in Sources */,
-				CE4A7D181D8C88D60016C1C5 /* GIFImageUtils.m in Sources */,
+				CE4A7E581D8CA9520016C1C5 /* GIFImageUtils.m in Sources */,
 				CE4A7CFD1D8C73310016C1C5 /* DataBlock.cpp in Sources */,
 				CE4A7D001D8C73310016C1C5 /* GCTGifEncoder.cpp in Sources */,
-				CE4A7CDC1D8C594A0016C1C5 /* module.map in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4A7CD11D8C59120016C1C5 /* GIFTests.m in Sources */,
+				CE4A7CD11D8C59120016C1C5 /* GIFCreationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

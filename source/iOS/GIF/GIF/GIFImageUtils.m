@@ -13,7 +13,7 @@
 
 + (void)acquireImageDataOfImage:(CGImageRef)inImage onAcquired:(OnImageDataAcquired)onAcquiredAction {
     // Create the bitmap context
-    CGContextRef cgctx = [GIFImageUtils createARGBBitmapContext:inImage];
+    CGContextRef cgctx = [GIFImageUtils createRGBABitmapContext:inImage];
     if (cgctx == NULL)
     {
         // error creating context
@@ -35,7 +35,6 @@
     void *data = CGBitmapContextGetData (cgctx);
     if (data != NULL)
     {
-        
         // **** You have a pointer to the image data ****
         if (onAcquiredAction) {
             onAcquiredAction(data);
@@ -54,7 +53,7 @@
     
 }
 
-+ (CGContextRef)createARGBBitmapContext:(CGImageRef)inImage {
++ (CGContextRef)createRGBABitmapContext:(CGImageRef)inImage {
     CGContextRef    context = NULL;
     CGColorSpaceRef colorSpace;
     void *          bitmapData;
@@ -89,7 +88,7 @@
         return NULL;
     }
     
-    // Create the bitmap context. We want pre-multiplied ARGB, 8-bits
+    // Create the bitmap context. We want pre-multiplied RGBA, 8-bits
     // per component. Regardless of what the source image format is
     // (CMYK, Grayscale, and so on) it will be converted over to the format
     // specified here by CGBitmapContextCreate.
@@ -99,7 +98,7 @@
                                      8,      // bits per component
                                      bitmapBytesPerRow,
                                      colorSpace,
-                                     kCGImageAlphaPremultipliedFirst);
+                                     kCGImageAlphaPremultipliedLast);
     if (context == NULL)
     {
         free (bitmapData);

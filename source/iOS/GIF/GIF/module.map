@@ -6,4 +6,6 @@
 //  Copyright © 2016 Błażej Szajrych. All rights reserved.
 //
 
-
+framework module GIFFramework {
+    umbrella header "GIF.h"
+}

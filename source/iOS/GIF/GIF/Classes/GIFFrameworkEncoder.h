@@ -9,13 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIImage.h>
 
+
 typedef NS_ENUM(NSInteger, GIFEncodingType){
     GIFEncodingTypeSimpleFast,
-    GIFEncodingTypeStableHighMemory,
+    
+    //TODO: Inspect -> Tests for this mode fail!
+//    GIFEncodingTypeStableHighMemory,
+    
     GIFEncodingTypeNormalLowMemory
 };
 
 NS_ASSUME_NONNULL_BEGIN
+
+extern NSString *const GIFErrorDomain;
+
+extern int const kGIFErrorCouldNotEncodeFrame;
 
 @interface GIFEncoder : NSObject
 
@@ -25,7 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) NSUInteger height;
 @property(nonatomic) BOOL useDither;
 
-- (void)encodeFrame:(UIImage *)frame frameDelay:(NSUInteger)delay;
+- (BOOL)encodeFrame:(UIImage *)frame frameDelay:(NSUInteger)delay error:(NSError **)error;
+- (void)closeGif;
 
 @end
 

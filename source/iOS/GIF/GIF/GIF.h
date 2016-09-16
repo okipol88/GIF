@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char GIFVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GIF/PublicHeader.h>
 
-
+#import <GIF/GIFFrameworkEncoder.h>

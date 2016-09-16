@@ -15,6 +15,6 @@ typedef void(^OnImageDataAcquired)(void* data);
 @interface GIFImageUtils : NSObject
 
 + (void) acquireImageDataOfImage:(CGImageRef)inImage  onAcquired:(OnImageDataAcquired)onAcquiredAction;
-+ (CGContextRef) createARGBBitmapContext:(CGImageRef)inImage;
++ (CGContextRef) createRGBABitmapContext:(CGImageRef)inImage;
 
 @end

@@ -6,10 +6,15 @@
 //  Copyright © 2016 Błażej Szajrych. All rights reserved.
 //
 
-#import "GIFFrameowrkEncoder.h"
-#import "EncodingType.h"
+#import "GIFFrameworkEncoder.h"
 #import <CoreGraphics/CoreGraphics.h>
+#import "EncodingType.h"
 #import "GIFImageUtils.h"
+
+
+extern NSString *const GIFErrorDomain = @"pl.okipol.GIF";
+
+extern int const kGIFErrorCouldNotEncodeFrame = 101;
 
 @interface GIFEncoder () {
     BOOL _useDither;
@@ -31,8 +36,8 @@
         case GIFEncodingTypeSimpleFast:
             return ENCODING_TYPE_SIMPLE_FAST;
             
-        case GIFEncodingTypeStableHighMemory:
-            return ENCODING_TYPE_STABLE_HIGH_MEMORY;
+//        case GIFEncodingTypeStableHighMemory:
+//            return ENCODING_TYPE_STABLE_HIGH_MEMORY;
             
         default:
             break;
@@ -84,20 +89,34 @@
 
 #pragma mark methods
 
-- (void)encodeFrame:(UIImage *)frame frameDelay:(NSUInteger)delayMiliseconds {
+- (BOOL)encodeFrame:(UIImage *)frame frameDelay:(NSUInteger)delayMiliseconds error:(NSError * _Nullable __autoreleasing * _Nullable)error {
+    __block BOOL didSucceed = NO;
     
     int32_t delayMS = delayMiliseconds > INT32_MAX
     ? INT32_MAX
     : (int32_t)delayMiliseconds;
     
     CGImageRef imageRef = frame.CGImage;
-    
-    // The encoder only supports ARGB_8888 -> check and if not then convert
-    
+
+    // The encoder only supports ARGB_8888 
     [GIFImageUtils acquireImageDataOfImage:imageRef onAcquired:^(void *data) {
         uint32_t *pixels = (uint32_t *)data;
-        self.encoder->encodeFrame(pixels, delayMS);
+       
+        try {
+            self.encoder->encodeFrame(pixels, delayMS);
+            didSucceed = YES;
+        } catch (...) {
+            if (error) {
+                *error = [NSError errorWithDomain:GIFErrorDomain code:kGIFErrorCouldNotEncodeFrame userInfo:nil];
+            }
+        }
     }];
+    
+    return didSucceed;
+}
+
+- (void)closeGif {
+    self.encoder->release();
 }
 
 #pragma mark - HELPERS

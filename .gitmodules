@@ -1,0 +1,3 @@
+[submodule "android-ndk-gif"]
+	path = source/android-ndk-gif
+	url = https://github.com/okipol88/android-ndk-gif

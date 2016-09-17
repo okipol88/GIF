@@ -58,6 +58,8 @@ class ViewController: UIViewController {
                 encoder = GIFEncoder(mode: .NormalLowMemory, width: UInt(image.size.width), height: UInt(image.size.height), filePath: gifPath)
             }
             do {
+                print("Encoding frame \(path.index)")
+                
                 try encoder?.encodeFrame(image, frameDelay: 250)
             } catch {
                 print("Could not create frame for image at path \(path.element)")

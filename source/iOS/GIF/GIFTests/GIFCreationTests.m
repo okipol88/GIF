@@ -6,7 +6,7 @@
 //  Copyright © 2016 Błażej Szajrych. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <XCTest/XCTestC.h>
 #import <GIF/GIF.h>
 
 static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
@@ -14,6 +14,11 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 @interface GIFCreationTests : XCTestCase
 
 + (NSArray<NSString *> *)allCatImagePathsForGif;
++ (void)encodeWithType:(GIFEncodingType)encodingMode toPath:(NSString *)toPath;
+
+@end
+
+@interface GIFCreationTests()
 
 @property(nonatomic, copy, nonnull) NSString *gifPath;
 
@@ -61,11 +66,11 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 }
 
 - (void)testNormalModeEncoder {
-    [self encodeWithType:GIFEncodingTypeNormalLowMemory toPath:self.gifPath];
+    [GIFCreationTests encodeWithType:GIFEncodingTypeNormalLowMemory toPath:self.gifPath];
 }
 
 - (void)testFastModeEncoder {
-    [self encodeWithType:GIFEncodingTypeSimpleFast toPath:self.gifPath];
+    [GIFCreationTests encodeWithType:GIFEncodingTypeSimpleFast toPath:self.gifPath];
 }
 
 //TODO: Inspect -> Tests for this mode fail!
@@ -73,7 +78,7 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 //    [self encodeWithType:GIFEncodingTypeStableHighMemory toPath:self.gifPath];
 //}
 
-- (void)encodeWithType:(GIFEncodingType)encodingMode toPath:(NSString *)toPath {
++ (void)encodeWithType:(GIFEncodingType)encodingMode toPath:(NSString *)toPath {
     __block GIFEncoder *encoder = nil;
     
     __block NSError *err;
@@ -103,7 +108,7 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 
 #pragma - mark Helpers
 
-- (void)acquireAllImagesWithSingleImageAction:(void (^)(UIImage *))imageAction {
++ (void)acquireAllImagesWithSingleImageAction:(void (^)(UIImage *))imageAction {
     NSArray<NSString *> *imagePaths = [GIFCreationTests allCatImagePathsForGif];
     for (NSString *path in imagePaths) {
         UIImage *img = [UIImage imageWithContentsOfFile:path];

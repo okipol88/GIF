@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE43518B1D8D1D9700521190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43518A1D8D1D9700521190 /* AppDelegate.swift */; };
+		CE43518D1D8D1D9700521190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43518C1D8D1D9700521190 /* ViewController.swift */; };
+		CE4351901D8D1D9700521190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE43518E1D8D1D9700521190 /* Main.storyboard */; };
+		CE4351921D8D1D9700521190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4351911D8D1D9700521190 /* Assets.xcassets */; };
+		CE4351951D8D1D9700521190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4351931D8D1D9700521190 /* LaunchScreen.storyboard */; };
+		CE43519A1D8D1DC600521190 /* GIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7CC11D8C59110016C1C5 /* GIF.framework */; };
+		CE43519D1D8D231E00521190 /* cat_gif in Resources */ = {isa = PBXBuildFile; fileRef = CE4A7E461D8C8E050016C1C5 /* cat_gif */; };
 		CE4A7CC51D8C59120016C1C5 /* GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CC41D8C59120016C1C5 /* GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4A7CCC1D8C59120016C1C5 /* GIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7CC11D8C59110016C1C5 /* GIF.framework */; };
 		CE4A7CD11D8C59120016C1C5 /* GIFCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CD01D8C59120016C1C5 /* GIFCreationTests.m */; };
@@ -48,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE4351881D8D1D9700521190 /* GIFExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE43518A1D8D1D9700521190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE43518C1D8D1D9700521190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE43518F1D8D1D9700521190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4351911D8D1D9700521190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4351941D8D1D9700521190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4351961D8D1D9700521190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4A7CC11D8C59110016C1C5 /* GIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4A7CC41D8C59120016C1C5 /* GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIF.h; sourceTree = "<group>"; };
 		CE4A7CC61D8C59120016C1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +97,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE4351851D8D1D9700521190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43519A1D8D1DC600521190 /* GIF.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE4A7CBD1D8C59110016C1C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,9 +124,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4351891D8D1D9700521190 /* GIFExample */ = {
+			isa = PBXGroup;
+			children = (
+				CE43518A1D8D1D9700521190 /* AppDelegate.swift */,
+				CE43518C1D8D1D9700521190 /* ViewController.swift */,
+				CE43518E1D8D1D9700521190 /* Main.storyboard */,
+				CE4351911D8D1D9700521190 /* Assets.xcassets */,
+				CE4351931D8D1D9700521190 /* LaunchScreen.storyboard */,
+				CE4351961D8D1D9700521190 /* Info.plist */,
+			);
+			path = GIFExample;
+			sourceTree = "<group>";
+		};
 		CE4A7CB71D8C59110016C1C5 = {
 			isa = PBXGroup;
 			children = (
+				CE4351891D8D1D9700521190 /* GIFExample */,
 				CE4A7E481D8C8E5D0016C1C5 /* Frameworks */,
 				CE4A7CC31D8C59120016C1C5 /* GIF */,
 				CE4A7CCF1D8C59120016C1C5 /* GIFTests */,
@@ -117,6 +153,7 @@
 			children = (
 				CE4A7CC11D8C59110016C1C5 /* GIF.framework */,
 				CE4A7CCB1D8C59120016C1C5 /* GIFTests.xctest */,
+				CE4351881D8D1D9700521190 /* GIFExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +251,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CE4351871D8D1D9700521190 /* GIFExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4351991D8D1D9700521190 /* Build configuration list for PBXNativeTarget "GIFExample" */;
+			buildPhases = (
+				CE4351841D8D1D9700521190 /* Sources */,
+				CE4351851D8D1D9700521190 /* Frameworks */,
+				CE4351861D8D1D9700521190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFExample;
+			productName = GIFExample;
+			productReference = CE4351881D8D1D9700521190 /* GIFExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CE4A7CC01D8C59110016C1C5 /* GIF */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4A7CD51D8C59120016C1C5 /* Build configuration list for PBXNativeTarget "GIF" */;
@@ -256,9 +310,13 @@
 		CE4A7CB81D8C59110016C1C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Błażej Szajrych";
 				TargetAttributes = {
+					CE4351871D8D1D9700521190 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					CE4A7CC01D8C59110016C1C5 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -273,6 +331,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CE4A7CB71D8C59110016C1C5;
 			productRefGroup = CE4A7CC21D8C59110016C1C5 /* Products */;
@@ -281,11 +340,23 @@
 			targets = (
 				CE4A7CC01D8C59110016C1C5 /* GIF */,
 				CE4A7CCA1D8C59120016C1C5 /* GIFTests */,
+				CE4351871D8D1D9700521190 /* GIFExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE4351861D8D1D9700521190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43519D1D8D231E00521190 /* cat_gif in Resources */,
+				CE4351951D8D1D9700521190 /* LaunchScreen.storyboard in Resources */,
+				CE4351921D8D1D9700521190 /* Assets.xcassets in Resources */,
+				CE4351901D8D1D9700521190 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE4A7CBF1D8C59110016C1C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +375,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE4351841D8D1D9700521190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE43518D1D8D1D9700521190 /* ViewController.swift in Sources */,
+				CE43518B1D8D1D9700521190 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE4A7CBC1D8C59110016C1C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,7 +420,51 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		CE43518E1D8D1D9700521190 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE43518F1D8D1D9700521190 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4351931D8D1D9700521190 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4351941D8D1D9700521190 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		CE4351971D8D1D9700521190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GIFExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.okipol88.GIFExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE4351981D8D1D9700521190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GIFExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.okipol88.GIFExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CE4A7CD31D8C59120016C1C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,6 +592,10 @@
 		CE4A7CD91D8C59120016C1C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$SRCROOT\\..\\..\\android-ndk-gif\\library\\androidndkgif\\jni/**",
+					"$SRCROOT\\GIFTests",
+				);
 				INFOPLIST_FILE = GIFTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.okipol88.GIFTests;
@@ -488,6 +616,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE4351991D8D1D9700521190 /* Build configuration list for PBXNativeTarget "GIFExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4351971D8D1D9700521190 /* Debug */,
+				CE4351981D8D1D9700521190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CE4A7CBB1D8C59110016C1C5 /* Build configuration list for PBXProject "GIF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

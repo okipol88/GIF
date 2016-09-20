@@ -6,15 +6,16 @@
 //  Copyright © 2016 Błażej Szajrych. All rights reserved.
 //
 
-#import <XCTest/XCTestC.h>
+#import <XCTest/XCTest.h>
 #import <GIF/GIF.h>
+#import "GIFTests-Swift.h"
 
 static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 
 @interface GIFCreationTests : XCTestCase
 
-+ (NSArray<NSString *> *)allCatImagePathsForGif;
 + (void)encodeWithType:(GIFEncodingType)encodingMode toPath:(NSString *)toPath;
++ (TestItemsProvider *)itemsProvider;
 
 @end
 
@@ -26,29 +27,14 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 
 @implementation GIFCreationTests
 
-+ (NSArray<NSString *> *)allCatImagePathsForGif {
-    
-    static NSArray<NSString *> *allCatImagePaths = nil;
++ (TestHelper *)helper {
     static dispatch_once_t onceToken;
+    static TestHelper *provider;
     dispatch_once(&onceToken, ^{
-        NSMutableArray<NSString *> *imagePaths = [@[] mutableCopy];
-        NSString *dirPath = [[[NSBundle bundleForClass:[self class]] bundlePath] stringByAppendingPathComponent:kGIFCatGifImagesFolderName];
-        
-        NSError *dirContentsError;
-        NSArray<NSString *> *contents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dirPath error:&dirContentsError];
-        
-        XCTAssertNil(dirContentsError);
-        
-        for (NSString *fileName in contents) {
-            [imagePaths addObject:[dirPath stringByAppendingPathComponent:fileName]];
-        }
-        
-        XCTAssertTrue(contents.count > 0);
-        
-        allCatImagePaths = [imagePaths copy];
+        provider = [TestHelper new];
     });
     
-    return allCatImagePaths;
+    return provider;
 }
 
 - (void)setUp {
@@ -79,22 +65,7 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
 //}
 
 + (void)encodeWithType:(GIFEncodingType)encodingMode toPath:(NSString *)toPath {
-    __block GIFEncoder *encoder = nil;
-    
-    __block NSError *err;
-    [self acquireAllImagesWithSingleImageAction:^(UIImage *image) {
-       
-        if (!encoder) {
-            encoder = [[GIFEncoder alloc] initWithMode:encodingMode width:image.size.width height:image.size.height filePath:toPath];
-        }
-        
-        [encoder encodeFrame:image frameDelay:100 error:&err];
-        
-        XCTAssertNil(err);
-        
-    }];
-    
-    [encoder closeGif];
+    GIFEncoder* encoder = [self.helper encodeTestFramesToPath:toPath withMode:encodingMode];
     
     XCTAssertNotNil(encoder);
     XCTAssertTrue([[NSFileManager defaultManager] fileExistsAtPath:toPath]);
@@ -104,16 +75,6 @@ static NSString *const kGIFCatGifImagesFolderName = @"cat_gif";
     XCTAssertNil(fileAcquiringError);
     XCTAssertTrue(fileSize > 0);
     
-}
-
-#pragma - mark Helpers
-
-+ (void)acquireAllImagesWithSingleImageAction:(void (^)(UIImage *))imageAction {
-    NSArray<NSString *> *imagePaths = [GIFCreationTests allCatImagePathsForGif];
-    for (NSString *path in imagePaths) {
-        UIImage *img = [UIImage imageWithContentsOfFile:path];
-        imageAction(img);
-    }
 }
 
 @end

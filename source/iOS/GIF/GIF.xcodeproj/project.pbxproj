@@ -14,6 +14,8 @@
 		CE4351951D8D1D9700521190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4351931D8D1D9700521190 /* LaunchScreen.storyboard */; };
 		CE43519A1D8D1DC600521190 /* GIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7CC11D8C59110016C1C5 /* GIF.framework */; };
 		CE43519D1D8D231E00521190 /* cat_gif in Resources */ = {isa = PBXBuildFile; fileRef = CE4A7E461D8C8E050016C1C5 /* cat_gif */; };
+		CE43519F1D8F493600521190 /* GIFCreationPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43519E1D8F493600521190 /* GIFCreationPerformance.swift */; };
+		CE4351A11D8F4A5A00521190 /* TestItemsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4351A01D8F4A5A00521190 /* TestItemsProvider.swift */; };
 		CE4A7CC51D8C59120016C1C5 /* GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7CC41D8C59120016C1C5 /* GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4A7CCC1D8C59120016C1C5 /* GIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A7CC11D8C59110016C1C5 /* GIF.framework */; };
 		CE4A7CD11D8C59120016C1C5 /* GIFCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7CD01D8C59120016C1C5 /* GIFCreationTests.m */; };
@@ -42,6 +44,7 @@
 		CE4A7E471D8C8E050016C1C5 /* cat_gif in Resources */ = {isa = PBXBuildFile; fileRef = CE4A7E461D8C8E050016C1C5 /* cat_gif */; };
 		CE4A7E581D8CA9520016C1C5 /* GIFImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A7E571D8CA9520016C1C5 /* GIFImageUtils.m */; };
 		CE4A7E5A1D8CA9650016C1C5 /* GIFImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A7E591D8CA9650016C1C5 /* GIFImageUtils.h */; };
+		CE9034031D9101150001E601 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9034021D9101150001E601 /* TestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,8 @@
 		CE4351911D8D1D9700521190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4351941D8D1D9700521190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4351961D8D1D9700521190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE43519E1D8F493600521190 /* GIFCreationPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFCreationPerformance.swift; sourceTree = "<group>"; };
+		CE4351A01D8F4A5A00521190 /* TestItemsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestItemsProvider.swift; sourceTree = "<group>"; };
 		CE4A7CC11D8C59110016C1C5 /* GIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4A7CC41D8C59120016C1C5 /* GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIF.h; sourceTree = "<group>"; };
 		CE4A7CC61D8C59120016C1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		CE4A7E461D8C8E050016C1C5 /* cat_gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cat_gif; sourceTree = "<group>"; };
 		CE4A7E571D8CA9520016C1C5 /* GIFImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageUtils.m; sourceTree = "<group>"; };
 		CE4A7E591D8CA9650016C1C5 /* GIFImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageUtils.h; sourceTree = "<group>"; };
+		CE9034021D9101150001E601 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,9 @@
 				CE4A7E461D8C8E050016C1C5 /* cat_gif */,
 				CE4A7CD01D8C59120016C1C5 /* GIFCreationTests.m */,
 				CE4A7CD21D8C59120016C1C5 /* Info.plist */,
+				CE43519E1D8F493600521190 /* GIFCreationPerformance.swift */,
+				CE4351A01D8F4A5A00521190 /* TestItemsProvider.swift */,
+				CE9034021D9101150001E601 /* TestHelper.swift */,
 			);
 			path = GIFTests;
 			sourceTree = "<group>";
@@ -406,7 +415,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE43519F1D8F493600521190 /* GIFCreationPerformance.swift in Sources */,
+				CE4351A11D8F4A5A00521190 /* TestItemsProvider.swift in Sources */,
 				CE4A7CD11D8C59120016C1C5 /* GIFCreationTests.m in Sources */,
+				CE9034031D9101150001E601 /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +604,7 @@
 		CE4A7CD91D8C59120016C1C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$SRCROOT\\..\\..\\android-ndk-gif\\library\\androidndkgif\\jni/**",
 					"$SRCROOT\\GIFTests",
@@ -600,12 +613,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.okipol88.GIFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CE4A7CDA1D8C59120016C1C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GIFTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.okipol88.GIFTests;
@@ -623,6 +638,7 @@
 				CE4351981D8D1D9700521190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4A7CBB1D8C59110016C1C5 /* Build configuration list for PBXProject "GIF" */ = {
 			isa = XCConfigurationList;
